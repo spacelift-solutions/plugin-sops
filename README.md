@@ -38,7 +38,7 @@ secrets:
 ```hcl
 module "plugin_sops" {
   source = "spacelift.io/spacelift-solutions/plugin-sops/spacelift"
-  
+
   # Optional Variables
   name     = "plugin-sops"
   space_id = "root"
@@ -49,7 +49,6 @@ module "plugin_sops" {
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_name"></a> [name](#input\_name) | Name of the context | `string` | `"trigger_attached_contexts_stacks"` | no |
+| <a name="input_name"></a> [name](#input\_name) | Name of the context | `string` | `"plugin_sops"` | no |
 | <a name="input_space_id"></a> [space\_id](#input\_space\_id) | ID of the space | `string` | `"root"` | no |
-| <a name="input_spacelift_domain"></a> [spacelift\_domain](#input\_spacelift\_domain) | fqdn of the spacelift instance (https://spacelift-solutions.app.spacelift.io) | `string` | n/a | yes |
 <!-- END_TF_DOCS -->

@@ -33,8 +33,8 @@ resource "spacelift_mounted_file" "spacepy" {
 }
 
 resource "spacelift_mounted_file" "requirements" {
-    context_id    = spacelift_context.this.id
-    relative_path = "plugin_sops/requirements.txt"
-    content       = filebase64("${path.module}/requirements.txt")
-    write_only    = false
+  context_id    = spacelift_context.this.id
+  relative_path = "plugin_sops/requirements.txt"
+  content       = filebase64("${path.module}/requirements.txt")
+  write_only    = false
 }
