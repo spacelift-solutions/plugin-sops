@@ -5,12 +5,9 @@ It will decrypt an arbitrary number of files based on config you set.
 
 ## Usage
 
-This plugin requires the `sops` binary in the Spacelift runner. The included `Dockerfile` will build a terraform runner with `sops` installed.
-
-1. Build your custom runner using the included `Dockerfile` as a starting point.
-2. Spin up the module (see examples below)
-3. Add the `plugin_sops` label to any stack that has access to your decryption keys.
-4. The secrets you define in your `.sops.yaml` will automatically be decrypted with your configured `creation_rules`.
+1. Spin up the module (see examples below)
+2. Add the `plugin_sops` label to any stack that has access to your decryption keys.
+3. The secrets you define in your `.sops.yaml` will automatically be decrypted with your configured `creation_rules`.
 
 #### .sops.yaml
 
