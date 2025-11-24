@@ -1,5 +1,13 @@
 # Plugin Sops
 
+> **⚠️ DEPRECATED**: This repository is no longer maintained. The sops plugin functionality is now built directly into Spacelift's native plugins feature. Customers can install and configure the sops plugin through the Spacelift UI or API instead of using this Terraform module.
+>
+> For current documentation on using the sops plugin, please refer to the [Spacelift documentation](https://docs.spacelift.io).
+
+---
+
+## Legacy Documentation
+
 This module adds the `SOPS` plugin to your Spacelift account.
 It will decrypt an arbitrary number of files based on config you set.
 
